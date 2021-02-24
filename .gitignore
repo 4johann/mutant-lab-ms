@@ -1,0 +1,11 @@
+# Project
+build/
+/build/
+
+# Gradle
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ
+.idea
+*.swp

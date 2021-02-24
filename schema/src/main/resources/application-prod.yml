@@ -1,0 +1,9 @@
+spring:
+  flyway:
+    enabled: true
+    baseline-version: 1
+    schemas: public
+    locations: classpath:migration
+    sql-migration-suffixes: .sql
+    baseline-on-migrate: true
+    sql-migration-prefix: V
