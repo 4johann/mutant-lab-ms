@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-template-ms"
+rootProject.name = "mutant-lab-ms"
 
 include("api")
 include("app")

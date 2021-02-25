@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping(value = [(HEALTH)])
-class HealthCheck {
+class HealthCheckController {
 
     @GetMapping
     fun getHealthCheck(): ResponseEntity<Void> = ResponseEntity(HttpStatus.OK)

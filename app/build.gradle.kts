@@ -24,8 +24,11 @@ plugins{
 }
 
 dependencies {
+    implementation(project(":api"))
     implementation(project(":common"))
+    implementation(project(":core"))
     implementation(project(":domain"))
+    implementation(project(":schema"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("io.springfox:springfox-swagger2:${Versions.SWAGGER_VERSION}")
@@ -59,13 +62,4 @@ swagger {
             })
         }
     )
-}
-
-tasks.getByName("swaggerhubUpload") {
-    this.setProperty("api", Swagger.microserviceName)
-    this.setProperty("owner", Swagger.owner)
-    this.setProperty("version", Swagger.version)
-    this.setProperty("inputFile", "$buildDir/swagger-doc/swagger.json")
-    this.setProperty("token", "1")
-    this.setProperty("host", Swagger.host)
 }

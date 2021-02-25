@@ -9,3 +9,4 @@ build/
 # IntelliJ
 .idea
 *.swp
+.DS_Store

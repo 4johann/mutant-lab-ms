@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 @SpringBootTest
 @AutoConfigureMockMvc
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class HealthCheckTest {
+class HealthCheckControllerTest {
 
     @Autowired
     lateinit var mvc: MockMvc

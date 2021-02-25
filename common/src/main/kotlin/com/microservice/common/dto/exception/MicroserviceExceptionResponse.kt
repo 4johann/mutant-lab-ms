@@ -1,4 +1,4 @@
-package com.microservice.common.exception.dto
+package com.microservice.common.dto.exception
 
 data class MicroserviceExceptionResponse(
     val code: String,
